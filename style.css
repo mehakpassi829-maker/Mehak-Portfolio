@@ -1,0 +1,116 @@
+css
+/* ── RESET: removes browser default spacing ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── YOUR COLOR PALETTE ── */
+/* Change these 5 values to restyle everything instantly */
+:root {
+  --bg:       #080810;   /* page background */
+  --primary:  #f7c5d5;   /* blush pink */
+  --secondary:#c9b8f0;   /* lavender */
+  --accent:   #a8e6cf;   /* mint */
+  --text:     #fdf6f0;   /* warm white */
+  --muted:    #9a8fa8;   /* grey for small text */
+}
+
+/* ── BASE STYLES ── */
+body {
+  background: var(--bg);  /* uses the --bg variable above */
+  color: var(--text);
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;       /* space between lines of text */
+}
+
+/* ── NAVBAR ── */
+nav {
+  position: fixed;        /* stays at top when you scroll */
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;          /* puts logo and links side by side */
+  justify-content: space-between;  /* logo left, links right */
+  align-items: center;
+  padding: 1.2rem 3rem;
+  background: rgba(8, 8, 16, 0.85); /* semi-transparent bg */
+  backdrop-filter: blur(10px);       /* blurs what's behind it */
+  z-index: 100;           /* stays on top of everything */
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-links {
+  list-style: none;       /* removes bullet points */
+  display: flex;
+  gap: 2rem;              /* space between links */
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;  /* removes underline */
+  font-size: 0.9rem;
+  transition: color 0.3s; /* smooth color change on hover */
+}
+
+.nav-links a:hover {
+  color: var(--primary);  /* turns pink when you hover */
+}
+
+/* ── HERO SECTION ── */
+#hero {
+  min-height: 100vh;      /* fills the whole screen height */
+  display: flex;
+  flex-direction: column; /* stacks h1, p, button top to bottom */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem 2rem; /* top padding so navbar doesn't cover it */
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+#hero h1 span {
+  /* gradient text effect on your name */
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin-bottom: 2rem;
+}
+
+/* ── BUTTON ── */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 100px;   /* pill shape */
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #080810;         /* dark text on light button */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);  /* lifts up on hover */
+  box-shadow: 0 10px 25px rgba(247, 197, 213, 0.3);
+}
+
+
