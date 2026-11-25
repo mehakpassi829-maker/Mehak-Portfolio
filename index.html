@@ -1,30 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mehak · AI/ML Engineer Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400;500&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="bg"></canvas>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">✦ YourName</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav>
+  <div class="logo">✦ Mehak</div>
+  <ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#work">Work</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav>
 
-  <!-- HERO -->
+<main>
   <section id="hero">
-    <h1>Hi, I'm <span>MEHAK</span></h1>
-    <p>A web developer who builds things that are pretty & powerful.</p>
-    <a href="#projects" class="btn">See My Work</a>
+    <p class="label">AI/ML Engineer · Data Science Enthusiast</p>
+    <h1>Hi, I’m<br><em>Mehak</em></h1>
+    <p class="lead">I build AI-powered apps, backend APIs and machine learning solutions that are pretty and powerful. Move your mouse: the whole world floats with you.</p>
+    <div><a class="btn" href="#work">See my work</a><a class="btn ghost" href="https://github.com/mehakpassi829-maker" target="_blank" rel="noopener">GitHub</a></div>
   </section>
 
+  <section id="about">
+    <p class="label rv">About me</p>
+    <h2 class="rv">Dreamy outside,<br><em>technical inside</em></h2>
+    <div class="about rv">
+      <p>I’m a B.Tech student in Computer Science Engineering (AI &amp; Data Science) at CT University, Ludhiana, graduating in 2028. I love breaking big problems into small ones and turning them into clean, scalable products using Python, FastAPI and modern AI tools.<br><br>I’m looking for AI/ML and software engineering internships where I can learn fast and contribute to real-world products.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+        <div class="glass stat"><b>3</b>projects built</div>
+        <div class="glass stat"><b>4</b>certifications</div>
+        <div class="glass stat"><b>3</b>languages spoken</div>
+        <div class="glass stat"><b>2nd</b>runner-up, CTF</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="label rv">Tech stack</p>
+    <h2 class="rv">Skills you can<br><em>play with</em></h2>
+    <canvas id="balls" class="rv"></canvas>
+    <p class="hint">Move your cursor (or finger) over the balls and push them around ✦</p>
+    <p class="hint">Also: C++, Pandas, NumPy, Matplotlib, Stable Diffusion, Prompt Engineering, MongoDB (basics), REST APIs, DSA, Google Colab, Jupyter.</p>
+  </section>
+
+  <section id="work">
+    <p class="label rv">My work</p>
+    <h2 class="rv">Things I’ve <em>built</em></h2>
+    <div class="cards">
+      <div class="card glass rv" data-href="https://gitgauge.vercel.app/"><div class="em">📊</div><span class="badge live">Live application · Vercel</span><h3>GitGauge AI</h3><p>A live, fully working full-stack platform that analyses GitHub profiles: commits, languages, engineering practices, docs quality and growth, with a custom Hireability Score.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>GitHub API</span><span>JS</span></div><a class="cbtn" href="https://gitgauge.vercel.app/" target="_blank" rel="noopener">View Live Project ↗</a></div>
+      <div class="card glass rv" data-open="vc"><div class="em">🎨</div><span class="badge local">Local project · Visual showcase</span><h3>VisionCrafter AI</h3><p>A Stable Diffusion text-to-image app with prompt enhancement, negative prompts, multiple art styles, generation history and easy downloads. Explore the real interface and artwork.</p><div class="tags"><span>Flask</span><span>Stable Diffusion</span><span>JS</span></div><button class="cbtn" type="button" data-open="vc">View Showcase →</button></div>
+      <div class="card glass rv"><div class="em">✨</div><h3>3D Portfolio</h3><p>A responsive portfolio with 3D visuals and interactive navigation to showcase my skills, projects and achievements. You’re looking at it!</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <p class="label rv">Journey</p>
+    <h2 class="rv">Experience &amp; <em>achievements</em></h2>
+    <div class="journey rv">
+      <div class="glass"><h3>Generative AI Intern</h3><ul><li>Worked with Generative AI, prompt engineering and LLMs</li><li>Built and integrated AI-driven solutions for real-world problems</li><li>Strengthened analytical and collaboration skills</li></ul></div>
+      <div class="glass"><h3>Certifications</h3><ul><li>IBM SkillsBuild: Rapid Development of AI</li><li>IBM SkillsBuild: Machine Learning with Python</li><li>IBM: Enterprise Design Thinking Practitioner</li><li>Deloitte Australia: Data Analytics Simulation (Forage)</li></ul></div>
+      <div class="glass"><h3>Leadership</h3><ul><li>2nd Runner-Up, Capture The Flag (CTF) competition</li><li>Coordinated a university-level hackathon at CT University</li><li>Active member of TechVerse Club; multiple hackathons</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="label rv">Contact</p>
+    <h2 class="rv">Let’s build something <em>together</em></h2>
+    <form class="rv" id="cf">
+      <input id="n" placeholder="Your name"><input id="e" type="email" placeholder="Your email"><textarea id="m" placeholder="Say hi ✨"></textarea>
+      <button class="btn" style="border:0;cursor:pointer;justify-self:start">Send message</button>
+    </form>
+    <p class="links rv">Or reach me directly: <a href="mailto:mehakpassi829@gmail.com">mehakpassi829@gmail.com</a> · +91-8968556655 · <a href="https://github.com/mehakpassi829-maker" target="_blank" rel="noopener">github.com/mehakpassi829-maker</a></p>
+  </section>
+</main>
+<footer>Designed and built with ♥ by Mehak</footer>
+
+<div id="vc" class="vc" aria-hidden="true" role="dialog" aria-label="VisionCrafter AI showcase">
+ <div class="vc-in">
+  <button class="vc-back" id="vcBack" type="button">← Back to portfolio</button>
+  <p class="label">Project showcase · Runs locally</p>
+  <h2>VisionCrafter <em>AI</em></h2>
+  <p class="lead" style="max-width:640px">An AI-powered text-to-image application built with Python, Flask and Stable Diffusion. Describe an image, refine it with negative prompts, pick an art style and tune generation settings. This project currently runs locally on my machine, so here is the real interface and the artwork it generated.</p>
+  <div class="tags"><span>Python</span><span>Flask</span><span>Stable Diffusion</span><span>JavaScript</span><span>HTML/CSS</span></div>
+
+  <h3 class="vc-h">Application Interface</h3>
+  <div class="vc-grid">
+   <figure class="glass"><img src="images/landing-page.jpg" alt="VisionCrafter AI landing page" loading="lazy"><figcaption>Landing page</figcaption></figure>
+   <figure class="glass"><img src="images/workspace.jpg" alt="Text to Image workspace" loading="lazy"><figcaption>Text-to-image workspace with prompt, negative prompt and settings</figcaption></figure>
+   <figure class="glass"><img src="images/prompt-filled.jpg" alt="Workspace with a prompt filled in" loading="lazy"><figcaption>A prompt ready to generate</figcaption></figure>
+  </div>
+
+  <h3 class="vc-h">AI-Generated Artwork</h3>
+  <div class="vc-art glass">
+   <figure style="border-radius:20px 0 0 20px"><img src="images/artwork-goddess.jpg" alt="AI-generated celestial goddess portrait" loading="lazy"></figure>
+   <div class="info"><h3 style="font:400 1.5rem 'Cormorant Garamond',serif;margin-bottom:.6rem">Celestial goddess portrait</h3><p>Generated in the Cinematic style from the prompt “A colorful ethereal portrait of a celestial goddess with glowing pastel flowers and cosmic stardust”, with a negative prompt to avoid blur, distortion and bad anatomy.</p><div class="tags"><span>Cinematic</span><span>CFG 4.5</span><span>30 steps</span></div></div>
+  </div>
+
+  <h3 class="vc-h">Project Features</h3>
+  <div class="vc-feat">
+   <figure class="glass"><img src="images/art-styles.jpg" alt="Art style picker" loading="lazy"><figcaption>16 art styles, from Realistic and Anime to Cyberpunk and Oil Painting</figcaption></figure>
+   <ul class="glass"><li>Text-to-image generation with Stable Diffusion</li><li>Positive and negative prompts, plus a “Surprise me” prompt</li><li>16 selectable art styles</li><li>Adjustable size (1:1, 16:9, 9:16), CFG scale, steps and seed</li><li>Generate 1, 2 or 4 images at a time</li><li>Prompt history, favorites, gallery and downloads</li></ul>
+  </div>
+ </div>
+</div>
+<div id="lb" class="lb" aria-hidden="true"><button id="lbx" type="button" aria-label="Close">✕</button><img id="lbi" alt=""></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
